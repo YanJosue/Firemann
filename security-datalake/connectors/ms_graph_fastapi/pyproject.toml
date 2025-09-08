@@ -1,0 +1,22 @@
+
+[project]
+# --- Metadatos del Proyecto ---
+name = "ms-graph-connector"
+version = "0.1.0"
+description = "Conector para extraer logs de seguridad de Microsoft Graph API."
+requires-python = ">=3.8"
+
+# Dependencias 
+dependencies = [
+    "fastapi==0.111.0",
+    "uvicorn[standard]==0.29.0",
+    "kafka-python==2.0.2",
+    "httpx==0.27.0", # Cliente HTTP moderno para llamar a la API de Microsoft.
+    "pydantic-settings==2.2.1", # Para manejar secrets como el API key.
+    "canonical-mapper" # Dependencia del paquete local.
+]
+
+[tool.setuptools]
+# Configuración de Empaquetado 
+# Le dice a pip que el código fuente está en la carpeta 'ms_graph_connector'.
+packages = ["ms_graph_connector"]
