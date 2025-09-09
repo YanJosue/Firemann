@@ -1,6 +1,6 @@
 
 [project]
-# --- Metadatos del Proyecto ---
+# Metadatos del Proyecto 
 name = "ms-graph-connector"
 version = "0.1.0"
 description = "Conector para extraer logs de seguridad de Microsoft Graph API."
